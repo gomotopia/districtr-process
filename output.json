@@ -1,205 +1,93 @@
 [
   {
-    "id": "georgia",
-    "state": "Georgia",
-    "name": "Georgia",
     "units": [
       {
-        "id": "precincts",
-        "name": "Precincts",
-        "unitType": "Precincts",
+        "id": "blockgroups",
+        "name": "Block Groups",
+        "unitType": "Block Groups",
         "columnSets": [
           {
             "type": "population",
             "name": "Population",
             "total": {
               "key": "TOTPOP",
-              "name": "Total population",
-              "sum": 9687653,
+              "name": "Total Population",
+              "sum": 390845,
               "min": 0,
-              "max": 44065
+              "max": 3515
             },
             "subgroups": [
               {
                 "key": "NH_WHITE",
                 "name": "White population",
-                "sum": 5413920,
+                "sum": 119866,
                 "min": 0,
-                "max": 27519
+                "max": 1396
               },
               {
                 "key": "NH_BLACK",
                 "name": "Black population",
-                "sum": 2910800,
+                "sum": 230066,
                 "min": 0,
-                "max": 21054
+                "max": 2988
               },
               {
                 "key": "HISP",
                 "name": "Hispanic population",
-                "sum": 853689,
+                "sum": 21413,
                 "min": 0,
-                "max": 9354
+                "max": 466
               },
               {
                 "key": "NH_ASIAN",
                 "name": "Asian population",
-                "sum": 311692,
+                "sum": 11287,
                 "min": 0,
-                "max": 3514
+                "max": 830
               },
               {
                 "key": "NH_AMIN",
                 "name": "American Indian population",
-                "sum": 21279,
+                "sum": 564,
                 "min": 0,
-                "max": 167
+                "max": 39
               },
               {
                 "key": "NH_NHPI",
                 "name": "Native Hawaiian and Pacific Islander population",
-                "sum": 5152,
+                "sum": 26,
                 "min": 0,
-                "max": 74
+                "max": 9
               },
               {
                 "key": "NH_2MORE",
                 "name": "Two or more races",
-                "sum": 151980,
+                "sum": 6143,
                 "min": 0,
-                "max": 677
+                "max": 142
               },
               {
                 "key": "NH_OTHER",
                 "name": "Other races",
-                "sum": 19141,
+                "sum": 1480,
                 "min": 0,
-                "max": 160
-              }
-            ]
-          },
-          {
-            "type": "population",
-            "name": "Voting Age Population",
-            "total": {
-              "key": "VAP",
-              "name": "Voting age population",
-              "sum": 7196101,
-              "min": 0,
-              "max": 34169
-            },
-            "subgroups": [
-              {
-                "key": "WVAP",
-                "name": "White voting age population",
-                "sum": 4242514,
-                "min": 0,
-                "max": 22026
-              },
-              {
-                "key": "BVAP",
-                "name": "Black voting age population",
-                "sum": 2072946,
-                "min": 0,
-                "max": 14934
-              },
-              {
-                "key": "HVAP",
-                "name": "Hispanic voting age population",
-                "sum": 539002,
-                "min": 0,
-                "max": 5586
-              },
-              {
-                "key": "AMINVAP",
-                "name": "Native American voting age population",
-                "sum": 16324,
-                "min": 0,
-                "max": 145
-              },
-              {
-                "key": "NHPIVAP",
-                "name": "Native Hawaiian and Pacific Islander voting age population",
-                "sum": 3699,
-                "min": 0,
-                "max": 49
-              },
-              {
-                "key": "ASIANVAP",
-                "name": "Asian voting age population",
-                "sum": 234164,
-                "min": 0,
-                "max": 2443
-              },
-              {
-                "key": "OTHERVAP",
-                "name": "Other races voting age population",
-                "sum": 10107,
-                "min": 0,
-                "max": 124
-              },
-              {
-                "key": "2MOREVAP",
-                "name": "Two or more races voting age population",
-                "sum": 77345,
-                "min": 0,
-                "max": 383
-              }
-            ]
-          },
-          {
-            "type": "election",
-            "name": "2016 Presidential",
-            "subgroups": [
-              {
-                "key": "PRES16R",
-                "name": "Republican",
-                "sum": 2089514,
-                "min": 0,
-                "max": 9619
-              },
-              {
-                "key": "PRES16D",
-                "name": "Democratic",
-                "sum": 1877665,
-                "min": 0,
-                "max": 7147
-              }
-            ]
-          },
-          {
-            "type": "election",
-            "name": "2016 Senate",
-            "subgroups": [
-              {
-                "key": "SEN16R",
-                "name": "Republican",
-                "sum": 2136207,
-                "min": 0,
-                "max": 9197
-              },
-              {
-                "key": "SEN16D",
-                "name": "Democratic",
-                "sum": 1599788,
-                "min": 0,
-                "max": 6138
+                "max": 143
               }
             ]
           }
         ],
         "idColumn": {
-          "name": "ID",
-          "key": "ID"
+          "name": "2019 Census GEOID",
+          "key": "GEOID"
         },
         "bounds": [
           [
-            -85.6052,
-            30.3558
+            -90.1401,
+            29.8667
           ],
           [
-            -80.7514,
-            35.0007
+            -89.6251,
+            30.1775
           ]
         ],
         "tilesets": [
@@ -207,26 +95,29 @@
             "type": "fill",
             "source": {
               "type": "vector",
-              "url": "mapbox://districtr.georgia_precincts"
+              "url": "mapbox://districtr.neworleans_blockgroups"
             },
-            "sourceLayer": "georgia_precincts"
+            "sourceLayer": "neworleans_blockgroups"
           },
           {
             "type": "circle",
             "source": {
               "type": "vector",
-              "url": "mapbox://districtr.georgia_precincts_points"
+              "url": "mapbox://districtr.neworleans_blockgroups_points"
             },
-            "sourceLayer": "georgia_precincts_points"
+            "sourceLayer": "neworleans_blockgroups_points"
           }
         ]
       }
     ],
+    "name": "New Orleans",
+    "id": "neworleans",
+    "state": "Louisiana",
     "districtingProblems": [
       {
-        "name": "Congress",
-        "numberOfParts": 14,
-        "pluralNoun": "Congressional Districts"
+        "name": "City Council",
+        "numberOfParts": 5,
+        "pluralNoun": "City Council Districts"
       }
     ]
   }
